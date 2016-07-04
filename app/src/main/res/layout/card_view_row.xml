@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="0.5dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="1dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/checkBox"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_toRightOf="@+id/checkBox"
+                android:layout_toEndOf="@+id/checkBox"
+                android:id="@+id/image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="my name"
+                android:textColor="@color/Black"
+                android:id="@+id/name"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/image"
+                android:layout_toEndOf="@+id/image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="phone no"
+                android:textColor="@color/material_grey_800"
+                android:id="@+id/phone"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="email address"
+                android:id="@+id/emailtxt"
+                android:textColor="@color/material_grey_800"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/phone"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/image"
+                android:layout_toEndOf="@+id/image" />
+
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/emailtxt"
+                android:layout_marginTop="15dp"
+                android:id="@+id/sendSMS"
+                android:src="@drawable/sms"
+                android:layout_alignBottom="@+id/image"
+                android:layout_toRightOf="@+id/image" />
+
+            <ImageButton
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/call"
+            android:src="@drawable/call"
+            android:layout_below="@+id/emailtxt"
+            android:layout_marginTop="15dp"
+            android:layout_alignBottom="@+id/image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/sendSMS"
+            android:layout_toEndOf="@+id/sendSMS" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/email"
+                android:src="@drawable/email"
+                android:layout_below="@+id/emailtxt"
+                android:layout_marginTop="15dp"
+                android:layout_alignBottom="@+id/image"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/call"
+                android:layout_toEndOf="@+id/call" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/editDetails"
+                android:src="@drawable/edit"
+                android:layout_below="@+id/emailtxt"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@+id/image"
+                android:layout_toRightOf="@+id/email"
+                android:layout_toEndOf="@+id/email" />
+
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/delete"
+                android:src="@drawable/delete"
+                android:layout_below="@+id/emailtxt"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@+id/image"
+                android:layout_toRightOf="@+id/editDetails"
+                android:layout_toEndOf="@+id/editDetails" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

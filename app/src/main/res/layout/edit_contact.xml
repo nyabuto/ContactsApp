@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_name"
+        android:minHeight="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/edit_phone"
+        android:layout_below="@+id/edit_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/edit_email"
+        android:layout_below="@+id/edit_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:minHeight="50dp"
+        android:id="@+id/edit_save"
+        android:layout_below="@+id/edit_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>
